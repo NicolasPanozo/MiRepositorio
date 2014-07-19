@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.primerapp.MainActivity" >
+
+    <TextView
+        android:id="@+id/ingreseDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingrese_datos" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ingreseDatos"
+        android:layout_below="@+id/ingreseDatos"
+        android:layout_marginTop="25dp"
+        android:text="@string/nombre" />
+
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nombre"
+        android:layout_alignBottom="@+id/nombre"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/apellido"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nombre"
+        android:layout_below="@+id/txt_nombre"
+        android:layout_marginTop="32dp"
+        android:text="@string/apellido" />
+
+    <EditText
+        android:id="@+id/txt_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/apellido"
+        android:layout_alignBottom="@+id/apellido"
+        android:layout_alignLeft="@+id/txt_nombre"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    
+
+    <EditText
+        android:id="@+id/txt_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_apellido"
+        android:layout_below="@+id/apellido"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_edad"
+        android:layout_alignBottom="@+id/txt_edad"
+        android:layout_alignLeft="@+id/apellido"
+        android:text="@string/edad" />
+
+    <EditText
+        android:id="@+id/txt_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_edad"
+        android:layout_below="@+id/txt_edad"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_mail"
+        android:layout_alignBottom="@+id/txt_mail"
+        android:layout_alignLeft="@+id/edad"
+        android:text="@string/mail" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_mail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/btn_enviar" 
+        android:onClick="enviar_datos"/>
+
+</RelativeLayout>

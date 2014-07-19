@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Formulario</string>
+    <string name="ingrese_datos">Ingrese datos</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombre">Nombre:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="edad">Edad:</string>
+    <string name="mail">Email:</string>
+    <string name="btn_enviar">Enviar</string>
+    <string name="title_activity_second">Datos recibidos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lbl_nombre">Nombre:</string>
+    <string name="lbl_apellido">Apellido:</string>
+    <string name="lbl_edad">Edad:</string>
+    <string name="lbl_mail">Mail:</string>
+
+</resources>
